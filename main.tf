@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "digitalocean" {
-  token = "test"
+  token = "dop_v1_test"
 }
 
 variable "ssh_public_keys" {
