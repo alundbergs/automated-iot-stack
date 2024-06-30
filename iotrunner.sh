@@ -38,7 +38,7 @@ git clone https://github.com/rzashakh/iot-stack.git
 
 cd iot-stack
 
-sed -i "s/token = \"test\"/token = \"$DIGITALOCEAN_TOKEN\"/" main.tf
+sed -i "s/token = \"dop_v1_test\"/token = \"$DIGITALOCEAN_TOKEN\"/" main.tf
 echo -e "${GREEN}Updated main.tf with the provided DigitalOcean token.${NC}"
 
 cat << EOF > terraform.tfvars
