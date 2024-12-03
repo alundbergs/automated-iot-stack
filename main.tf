@@ -42,7 +42,7 @@ resource "digitalocean_droplet" "iot-stack" {
     sudo usermod -aG sudo iot-user
     sudo usermod -aG docker iot-user
 
-    sudo -u iot-user git clone https://github.com/rzashakh/iot-stack.git /home/iot-user/iot-stack-compose
+    sudo -u iot-user git clone https://github.com/alundbergs/automated-iot-stack.git /home/iot-user/iot-stack-compose
 
     cd /home/iot-user/iot-stack-compose
     sudo chmod u+x /home/iot-user/iot-stack-compose
